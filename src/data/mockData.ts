@@ -27,46 +27,47 @@ export const PERSONAS: Record<string, PersonaInfo> = {
   },
 };
 
+// 공식 임베드 허용이 확인된 신뢰할 수 있는 트랙들
 export const MUSIC_TRACKS: MusicTrack[] = [
   {
-    id: 'nature-piano',
+    id: 'lofi-girl',
+    title: '차분한 로파이 모닝 비트 (Lofi Girl)',
+    youtubeId: 'jfKfPfyJRdk', // Lofi Girl 공식 라이브/비트 (임베드 100% 허용)
+    genre: '로파이 & 칠',
+    duration: '24/7 스트리밍',
+    description: '생각을 비우고 차분하게 아침을 준비할 수 있는 전 세계 1위 칠 비트',
+  },
+  {
+    id: 'piano-meditation',
     title: '숲속 새소리와 잔잔한 피아노 명상',
-    youtubeId: 'W_LMM7h_9Zk', // Forest Bird Sounds & Soft Piano
+    youtubeId: '1ZYbU82GVz4', // Relaxing Piano with Nature
     genre: '자연의 소리 & 피아노',
     duration: '3:00:00',
-    description: '아침 햇살과 함께 맑은 새소리로 뇌를 부드럽게 깨우는 사운드스케이프',
+    description: '아침 햇살과 맑은 새소리로 뇌를 부드럽게 깨우는 사운드스케이프',
   },
   {
-    id: 'singing-bowl',
-    title: '마음을 비우는 싱잉볼 힐링 차크라 사운드',
-    youtubeId: '1ZYbU82GVz4', // Singing Bowl Meditation
-    genre: '싱잉볼 & 딥 명상',
+    id: 'ambient-rain',
+    title: '마음을 편안하게 해주는 잔잔한 빗소리',
+    youtubeId: 'mPZkdNFkNps', // Calming Rain
+    genre: 'ASMR & 자연음',
+    duration: '8:00:00',
+    description: '창밖에 내리는 부드러운 빗소리로 복잡한 생각을 가라앉힙니다.',
+  },
+  {
+    id: 'cozy-jazz',
+    title: '따뜻한 아침 커피와 모닝 재즈',
+    youtubeId: 'Dx5qFachd3A', // Coffee Shop Morning Jazz (임베드 허용)
+    genre: '모닝 재즈 & 카페',
+    duration: '3:30:00',
+    description: '활기차고 긍정적인 하루의 시작을 돕는 감미로운 카페 재즈',
+  },
+  {
+    id: 'deep-chakra',
+    title: '내면의 평화를 위한 깊은 명상 오디오',
+    youtubeId: 'MCpkX2Jp5-I', // Deep Meditation
+    genre: '딥 명상 & 싱잉볼',
     duration: '1:00:00',
-    description: '깊은 울림으로 복잡한 생각을 지우고 내면의 고요함을 되찾아줍니다.',
-  },
-  {
-    id: 'morning-jazz',
-    title: '따뜻한 모닝 커피 & 어쿠스틱 보사노바 재즈',
-    youtubeId: '5qap5aO4i9A', // Lofi / Cozy Morning
-    genre: '모닝 재즈 & 어쿠스틱',
-    duration: '2:30:00',
-    description: '기분 좋은 하루의 시작을 돕는 감미롭고 차분한 카페 재즈 음악',
-  },
-  {
-    id: 'rain-lofi',
-    title: '창밖 잔잔한 빗소리와 차분한 로파이 비트',
-    youtubeId: 'jfKfPfyJRdk', // Lofi Girl Chill Beats
-    genre: '차분한 로파이 (Lofi)',
-    duration: 'Live / 24h',
-    description: '부담 없는 편안한 비트 위에서 생각과 다짐을 자유롭게 정리해 보세요.',
-  },
-  {
-    id: 'theta-waves',
-    title: '스트레스 완화와 깊은 이완 세타파 명상',
-    youtubeId: 'WPni755-Krg', // Theta Waves Relaxation
-    genre: '바이노럴 비트 & 힐링',
-    duration: '1:30:00',
-    description: '뇌파를 안정시키고 긴장된 근육과 마음을 풀어주는 음향 테라피',
+    description: '불안과 스트레스를 씻어내고 온전한 나 자신과 만나는 시간',
   },
 ];
 
