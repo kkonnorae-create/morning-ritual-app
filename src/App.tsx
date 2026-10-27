@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { PersonaType, MusicTrack, DailyQuote, RitualLog } from './types';
-import { PERSONAS, MUSIC_TRACKS, DAILY_QUOTES, MOOD_TAGS } from './data/mockData';
+import { PersonaType, AudioTrack, DailyQuote, RitualLog } from './types';
+import { PERSONAS, AUDIO_TRACKS, DAILY_QUOTES, MOOD_TAGS } from './data/mockData';
 import { YouTubePlayer } from './components/YouTubePlayer';
 import { OnboardingModal } from './components/OnboardingModal';
 import { CalendarArchive } from './components/CalendarArchive';
@@ -26,7 +26,7 @@ export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'ritual' | 'archive'>('ritual');
   const [selectedPersona, setSelectedPersona] = useState<PersonaType>('burnout');
   const [showOnboarding, setShowOnboarding] = useState<boolean>(false);
-  const [currentTrack, setCurrentTrack] = useState<MusicTrack>(MUSIC_TRACKS[0]);
+  const [currentTrack, setCurrentTrack] = useState<AudioTrack>(AUDIO_TRACKS[0]);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState<number>(0);
   const [noteText, setNoteText] = useState<string>('');
   const [selectedMood, setSelectedMood] = useState<string>(MOOD_TAGS[0].id);
@@ -63,9 +63,9 @@ export const App: React.FC = () => {
     setCurrentQuoteIndex(0);
 
     // 페르소나에 맞는 음악 추천
-    if (p === 'burnout') setCurrentTrack(MUSIC_TRACKS[0]); // 피아노 새소리
-    else if (p === 'jobseeker') setCurrentTrack(MUSIC_TRACKS[4]); // 세타파
-    else if (p === 'miracle') setCurrentTrack(MUSIC_TRACKS[2]); // 모닝 재즈
+    if (p === 'burnout') setCurrentTrack(AUDIO_TRACKS[0]); // 피아노 새소리
+    else if (p === 'jobseeker') setCurrentTrack(AUDIO_TRACKS[2]); // 싱잉볼 명상
+    else if (p === 'miracle') setCurrentTrack(AUDIO_TRACKS[1]); // 모닝 로파이
   };
 
   // 현재 페르소나의 인용문 목록

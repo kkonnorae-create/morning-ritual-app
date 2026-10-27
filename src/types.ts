@@ -9,14 +9,17 @@ export interface PersonaInfo {
   themeColor: string;
 }
 
-export interface MusicTrack {
+export interface AudioTrack {
   id: string;
   title: string;
-  youtubeId: string;
   genre: string;
-  duration: string;
+  audioUrl: string;
+  youtubeId: string;
   description: string;
 }
+
+// 호환성 유지용 별칭
+export type MusicTrack = AudioTrack;
 
 export interface DailyQuote {
   id: string;

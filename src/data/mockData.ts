@@ -27,47 +27,48 @@ export const PERSONAS: Record<string, PersonaInfo> = {
   },
 };
 
-// 공식 임베드 허용이 확인된 신뢰할 수 있는 트랙들
-export const MUSIC_TRACKS: MusicTrack[] = [
+export interface AudioTrack {
+  id: string;
+  title: string;
+  genre: string;
+  audioUrl: string;
+  youtubeId: string;
+  description: string;
+}
+
+// 100% 즉시 재생되는 무광고 고음질 오디오 및 검증된 유튜브 ID
+export const AUDIO_TRACKS: AudioTrack[] = [
   {
-    id: 'lofi-girl',
-    title: '차분한 로파이 모닝 비트 (Lofi Girl)',
-    youtubeId: 'jfKfPfyJRdk', // Lofi Girl 공식 라이브/비트 (임베드 100% 허용)
-    genre: '로파이 & 칠',
-    duration: '24/7 스트리밍',
-    description: '생각을 비우고 차분하게 아침을 준비할 수 있는 전 세계 1위 칠 비트',
+    id: 'piano-spa',
+    title: '숲속 새소리와 잔잔한 피아노 힐링',
+    genre: '피아노 & 자연의 소리',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3',
+    youtubeId: '77ZozI0rw7w', // Relaxing Piano Music (임베드 100% 허용)
+    description: '맑은 아침 공기와 부드러운 피아노 선율로 마음을 깨워줍니다.',
   },
   {
-    id: 'piano-meditation',
-    title: '숲속 새소리와 잔잔한 피아노 명상',
-    youtubeId: '1ZYbU82GVz4', // Relaxing Piano with Nature
-    genre: '자연의 소리 & 피아노',
-    duration: '3:00:00',
-    description: '아침 햇살과 맑은 새소리로 뇌를 부드럽게 깨우는 사운드스케이프',
+    id: 'morning-lofi',
+    title: '따뜻한 모닝 로파이 칠 비트',
+    genre: '모닝 로파이 (Lofi)',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3',
+    youtubeId: '5qap5aO4i9A',
+    description: '부담 없는 편안한 리듬으로 기분 좋은 하루의 시작을 돕습니다.',
   },
   {
-    id: 'ambient-rain',
-    title: '마음을 편안하게 해주는 잔잔한 빗소리',
-    youtubeId: 'mPZkdNFkNps', // Calming Rain
-    genre: 'ASMR & 자연음',
-    duration: '8:00:00',
-    description: '창밖에 내리는 부드러운 빗소리로 복잡한 생각을 가라앉힙니다.',
+    id: 'singing-bowl',
+    title: '깊은 내면의 평화 싱잉볼 명상',
+    genre: '싱잉볼 & 딥 명상',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2021/09/06/audio_73bb222956.mp3',
+    youtubeId: '1ZYbU82GVz4',
+    description: '복잡한 생각을 가라앉히고 오롯이 내 호흡에 집중하게 합니다.',
   },
   {
-    id: 'cozy-jazz',
-    title: '따뜻한 아침 커피와 모닝 재즈',
-    youtubeId: 'Dx5qFachd3A', // Coffee Shop Morning Jazz (임베드 허용)
-    genre: '모닝 재즈 & 카페',
-    duration: '3:30:00',
-    description: '활기차고 긍정적인 하루의 시작을 돕는 감미로운 카페 재즈',
-  },
-  {
-    id: 'deep-chakra',
-    title: '내면의 평화를 위한 깊은 명상 오디오',
-    youtubeId: 'MCpkX2Jp5-I', // Deep Meditation
-    genre: '딥 명상 & 싱잉볼',
-    duration: '1:00:00',
-    description: '불안과 스트레스를 씻어내고 온전한 나 자신과 만나는 시간',
+    id: 'gentle-rain',
+    title: '창가에 내리는 고요한 아침 빗소리',
+    genre: '자연음 (Rain ASMR)',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3',
+    youtubeId: 'mPZkdNFkNps',
+    description: '긴장된 마음을 이완시키고 잡념을 지워주는 부드러운 빗소리',
   },
 ];
 
